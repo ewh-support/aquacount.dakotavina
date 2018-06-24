@@ -52,8 +52,8 @@
 				<div data-page="panel-right1" class="page">
 					<div class="page-content">
 						<div class="content-block">
-							<p>This is a right side panel. You can close it by clicking outsite or on this link:
-								<a href="/#" class="close-panel">close me</a>. You can put here anything, even another isolated view, try it:</p>
+							<p>Chương trình tính toán số liệu trong nuôi tôm
+								<a href="/#" class="close-panel"></a>. Phần mềm miễn phí do THUYSAN247 phát triển, xem ngay!</p>
 						</div>
 						<div class="list-block">
 							<ul>
@@ -96,7 +96,7 @@
 					<div class="left sliding">
 						<a href="#" class="back link"><i class="icon icon-back"></i><span>Quay lại</span></a>
 					</div>
-					<div class="center">Bảng tính</div>
+					<div class="center">Tính Thức Ăn </div>
 				</div>
 				<!-- menu cho Tính Thu Tỉa -->
 				<div class="navbar-inner cached" data-page="tinhthutia">
@@ -108,7 +108,7 @@
 
 				<!-- Services page navbar -->
 				<div class="navbar-inner cached" data-page="services">
-							<div class="left">
+							<!--<div class="left">
 								<a href="/" class="link icon-only">
 									<i class="icon icon-back"></i>
                                     <span>Back</span>
@@ -119,7 +119,7 @@
 								<a href="#" class="link icon-only">
 									<i class="icon icon-bars"></i>
 								</a>
-							</div>
+							</div>-->
 				</div>
 			</div>
 			<div class="pages navbar-through toolbar-through">
@@ -145,7 +145,7 @@
 										<div class="item-content">
 											<div class="item-inner">
 												<div class="item-input">
-													<input type="text" id="ngaynuoi" placeholder="Nhập ngày nuôi" />
+													<input type="number" id="ngaynuoi" placeholder="Nhập ngày nuôi" />
 												</div>
 												<div class="item-title label"> ngày</div>
 											</div>
@@ -155,7 +155,7 @@
 										<div class="item-content">
 											<div class="item-inner">
 												<div class="item-input">
-													<input type="text" id="luongThucAnThucTe" placeholder="Lượng cho ăn" />
+													<input type="number" id="luongThucAnThucTe" placeholder="Lượng cho ăn" />
 												</div>
 												<div class="item-title label">(kg/ngày)</div>
 											</div>
@@ -175,8 +175,8 @@
 									<li>
 										<div class="item-content">
 											<div class="item-inner">
-												<div class="item-title label">Lượng thức ăn</div>
-												<input type="text" id="luongThucAn" placeholder="" />
+												<div class="item-input">Lượng thức ăn</div>
+												<input type="number" id="luongThucAn" placeholder="" />
 												<div class="item-title label">(kg/ngày)</div>
 											</div>
 										</div>
@@ -184,8 +184,8 @@
 									<li>
 										<div class="item-content">
 											<div class="item-inner">
-												<div class="item-title label">Size</div>
-												<input type="text" id="size" placeholder="" />
+												<div class="item-input">Size</div>
+												<input type="number" id="size" placeholder="" />
 												<div class="item-title label">(con/kg)</div>
 											</div>
 										</div>
@@ -193,8 +193,8 @@
 									<li>
 										<div class="item-content">
 											<div class="item-inner">
-												<div class="item-title label">Trọng lượng</div>
-												<input type="text" id="trongluong" placeholder="" />
+												<div class="item-input">Trọng lượng</div>
+												<input type="number" id="trongluong" placeholder="" />
 												<div class="item-title label">(gam/con)</div>
 											</div>
 										</div>
@@ -202,8 +202,8 @@
 									<li>
 										<div class="item-content">
 											<div class="item-inner">
-												<div class="item-title label">Tỉ lệ bỏ nhá</div>
-												<input type="text" id="tiLeBoNha" placeholder="" />
+												<div class="item-input">Tỉ lệ bỏ nhá</div>
+												<input type="number" id="tiLeBoNha" placeholder="" />
 												<div class="item-title label">(%)</div>
 											</div>
 										</div>
@@ -211,8 +211,8 @@
 									<li>
 										<div class="item-content">
 											<div class="item-inner">
-												<div class="item-title label">Lượng bỏ nhá</div>
-												<input type="text" id="luongBoNha" placeholder="" />
+												<div class="item-input">Lượng bỏ nhá</div>
+												<input type="number" id="luongBoNha" placeholder="" />
 												<div class="item-title label">(kg/ngày)</div>
 											</div>
 										</div>
@@ -220,8 +220,8 @@
 									<li>
 										<div class="item-content">
 											<div class="item-inner">
-												<div class="item-title label">Thời gian kiểm tra</div>
-												<input type="text" id="thoiGianKiemTra" placeholder="" />
+												<div class="item-input">Thời gian kiểm tra</div>
+												<input type="number" id="thoiGianKiemTra" placeholder="" />
 												<div class="item-title label">(phút)</div>
 											</div>
 										</div>
@@ -229,8 +229,8 @@
 									<li>
 										<div class="item-content">
 											<div class="item-inner">
-												<div class="item-title label">Tỉ lệ sống</div>
-												<input type="text" id="tiLeSong" placeholder="" />
+												<div class="item-input">Tỉ lệ sống</div>
+												<input type="number" id="tiLeSong" placeholder="" />
 												<div class="item-title label">(%)</div>
 											</div>
 										</div>
@@ -238,8 +238,8 @@
 									<li>
 										<div class="item-content">
 											<div class="item-inner">
-												<div class="item-title label">Sản lượng</div>
-												<input type="text" id="sanLuong" placeholder="" />
+												<div class="item-input">Sản lượng</div>
+												<input type="number" id="sanLuong" placeholder="" />
 												<div class="item-title label">(kg)</div>
 											</div>
 										</div>
@@ -270,7 +270,7 @@
 					
 								</ul>
 							</form>
-							<div class="fb-comments" data-href="http://aquaapp.showcase.easywebhub.me/" data-numposts="100"></div>
+							<div class="fb-comments" data-href="http://aquacount.dakotavina.easywebhub.me/" data-numposts="100"></div>
 						</div>
 						<a href="/index.html" class="button_full">Quay lại</a>
 					</div>					<!-- Tính Thu Tỉa page -->
@@ -392,7 +392,7 @@
 									<li>
 										<h4>Tỉa lần 2</h4>
 									</li>
-					                
+					
 									<li>
 										<div class="item-content">
 											<div class="item-inner">
@@ -507,7 +507,7 @@
 										</div>
 									</li>
 									<li>
-										
+					
 										<div class="content-block">
 											<p>Thu tỉa là cách để người nuôi tận dụng tối đa diện tích nuôi để có sản lượng cao nhất trong ao nuôi của mình.
 												</br>- Thời điểm nào nên thu tỉa?
@@ -516,11 +516,11 @@
 												</br> ...
 												</br>
 												Bảng này giúp người nuôi có cái nhìn tổng quan về ao nuôi để có kế hoạch thu tỉa.
-												</br>Thông thường 1 vụ nuôi sẽ tỉa 2 lần, lần thứ 3 là tổng thu. 
-					                            </br>Chúng tôi bổ sung thêm bảng tính tỉa lần 3 để người nuôi tham khảo.</br>
+												</br>Thông thường 1 vụ nuôi sẽ tỉa 2 lần, lần thứ 3 là tổng thu.
+												</br>Chúng tôi bổ sung thêm bảng tính tỉa lần 3 để người nuôi tham khảo.</br>
 											</p>
 										</div>
-					                    <div class="item-content">
+										<div class="item-content">
 											<div class="item-inner">
 												<div class="item-input">Nếu thu 100% đợt 1</div>
 												<input type="number" disabled id="tongdot01" placeholder="Không thu tỉa" />
@@ -534,7 +534,7 @@
 												<div class="item-title label">(kg)</div>
 											</div>
 										</div>
-					                    <div class="item-content">
+										<div class="item-content">
 											<div class="item-inner">
 												<div class="item-input">Tổng thu hoạch </div>
 												<input type="number" disabled id="tongthu" placeholder="Tỉa 3 lần" />
@@ -545,12 +545,12 @@
 					
 									<div class="content-block">
 										<p>Bản quyền thuộc về www.thuysan247.com
-					                        </br> Đóng góp ý kiến bằng facebook mục bên dưới </p>
+											</br> Đóng góp ý kiến bằng facebook mục bên dưới </p>
 									</div>
 					
 								</ul>
 							</form>
-							<div class="fb-comments" data-href="http://aquaapp.showcase.easywebhub.me/" data-numposts="100"></div>
+							<div class="fb-comments" data-href="http://aquacount.dakotavina.easywebhub.me/" data-numposts="100"></div>
 						</div>
 						<a href="/index.html" class="button_full">Quay lại</a>
 					</div>					
@@ -561,39 +561,6 @@
 
 <div data-page="home" class="page">
 	<div class="page-content">
-
-		<!-- <ul>
-                <li>
-                    <div class="item-content">
-                        <div class="item-inner">
-                            <div class="item-title label">Lượng giống thả</div>
-                            <div class="item-input">
-                                <input type="text" id="luonggiongtha" placeholder="số lương" />
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="item-content">
-                        <div class="item-inner">
-                            <div class="item-title label">Ngày Nuôi</div>
-                            <div class="item-input">
-                                <input type="text" id="ngaynuoi" placeholder="nhập ngày nuôi" />
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="item-content">
-                        <div class="item-inner">
-                            <div class="item-title label">Lượng cho ăn (kg/ngày)</div>
-                            <div class="item-input">
-                                <input type="text" id="luongchoan" placeholder="nhập ngày nuôi" />
-                            </div>
-                        </div>
-                    </div>
-                </li>
-          </ul> -->
 		<div class="navbar">
 			<div class="navbar-inner">
 				<div class="center sliding">PHẦN MỀM TÍNH TOÁN NUÔI TÔM</div>
