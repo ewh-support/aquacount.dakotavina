@@ -152,6 +152,7 @@ function sanluongcon01() {
 
 function matdo01() {
     return luonggiongcon01() / $$('#thetichnuocao').val();
+   
 }
 
 $$('.tia-lan-2').on('click', function () {
@@ -209,7 +210,7 @@ function tongdot02() {
     return $$('#luonggiongcon01').val() / $$('#cotom02').val() + (1*$$('#luongtia01').val());
 }
 function tongthu() {
-    return (1*$$('#luongtia01').val()) + (1*$$('#luongtia02').val()) + (1*$$('#luongtia03').val()) + (1*$$('#sanluongcon03').val());
+    return ($$('#luongtia01').val()) + (1*$$('#luongtia02').val()) + (1*$$('#luongtia03').val()) + (1*$$('#sanluongcon03').val());
 }
 // Generate dynamic page
 var dynamicPageIndex = 0;
